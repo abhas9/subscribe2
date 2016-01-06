@@ -1,0 +1,17 @@
+{
+	"name": "jquery-subscribe2",
+	"version": "0.0.1",
+	"authors": [
+		"Abhas Tandon"
+	],
+	"description": "A jQuery based email subscription widget with Google forms as backend.",
+	"main": "src/jquery.subscribe2.js",
+	"keywords": [
+		"jquery",
+		"plugin",
+		"boilerplate",
+		"jquery-plugin",
+		"jquery-boilerplate"
+	],
+	"license": "MIT"
+}
