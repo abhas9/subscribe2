@@ -8,15 +8,15 @@
                 client: "Please enter a valid email address.",
                 server: "Error contacting server"
             },
-            options: {
-                method: "google",
-                formkey: "1eiFxDZOpcyjPo9ub7nIwp6vAKUkLIiOxXIPT1TtQvoQ",
-                datakey: "entry.57553044"
-            },
             successMessage: "Thanks. We have added you to our list and you will be notified soon."
         };
     // Plugin constructor
     function Plugin(element, options) {
+        if (!options.hasOwnProperty("options") || typeof options.options !== "object" || !options.options.hasOwnProperty("formkey") || !options.options.hasOwnProperty("datakey") || typeof options.options.formkey !== "string" || typeof options.options.datakey !== "string") {
+            console.error("Invalid Options. Refer https://github.com/abhas9/subscribe2");
+            return;
+        }
+        
         this.element = element;
         this.settings = $.extend({}, defaults, options);
         this._defaults = defaults;

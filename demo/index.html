@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>jQuery Subscribe2</title>
-		<script src="../node_modules/jquery/dist/jquery.min.js"></script>
-		<script src="../src/jquery.subscribe2.js"></script>
-		<link rel="stylesheet" type="text/css" href="../src/jquery.subscribe2.css">
-	</head>
-	<body>
-		<div id="element"></div>
-		<script>
-			$(function() {
-				$("#element").subscribe2({
-					propertyName: "a custom value"
-				});
-			});
-		</script>
-	</body>
+    <head>
+        <title>jQuery Subscribe2</title>
+        <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="../src/jquery.subscribe2.js"></script>
+        <link rel="stylesheet" type="text/css" href="../src/jquery.subscribe2.css">
+    </head>
+    <body>
+        <div id="element"></div>
+        <script>
+        $(function() {
+        $("#element").subscribe2({
+	        options: {
+	                method: "google",
+	                formkey: "1eiFxDZOpcyjPo9ub7nIwp6vAKUkLIiOxXIPT1TtQvoQ",
+	                datakey: "entry.57553044"
+	            }
+	        });
+        });
+        </script>
+    </body>
 </html>
