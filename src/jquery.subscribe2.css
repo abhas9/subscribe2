@@ -1,0 +1,67 @@
+.subscribe2-wrp {
+    width: 100%;
+    max-width: 450px;
+    border: 1px solid #ccc;
+}
+
+.subscribe2-input-view {
+    padding: 10px 30px;
+}
+
+.subscribe2-input-wrp {
+    width: 70%;
+    float: left;
+    margin-right: 5%;
+    position: relative;
+}
+
+.subscribe2-btn {
+    width: 25%;
+    float: left;
+}
+
+.subscribe2-control-input {
+    width: 100%;
+}
+
+.subscribe2-validation-status {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 2px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    padding: 2px;
+    font-size: 12px;
+    line-height: 12px;
+    vertical-align: middle;
+    color: #fff;
+}
+
+.subscribe2-valid {
+    background: #49BF49;
+    border: 1px solid #6DBD6D;
+}
+
+.subscribe2-invalid {
+    background: #c0392b;
+    border: 1px solid #B13326;
+    line-height: 9px;
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+}
+
+.subscribe2-success {
+    padding: 10%;
+}
+
+@media only screen and (max-width: 480px) {
+    .subscribe2-input-wrp {
+        width: 100%;
+    }
+    .subscribe2-btn {
+        width: 90%;
+        margin: 10px auto;
+    }
+}

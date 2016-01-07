@@ -74,11 +74,11 @@
                 if (this.validateEmail(inputValue)) {
                     this.validationStatusIcon.css({
                         display: "block"
-                    }).addClass("subscribe2-valid").removeClass("subscribe2-invalid").html("Valid");
+                    }).addClass("subscribe2-valid").removeClass("subscribe2-invalid").html("&#x2713;");
                 } else {
                     this.validationStatusIcon.css({
                         display: "block"
-                    }).addClass("subscribe2-invalid").removeClass("subscribe2-valid").html("Invalid");
+                    }).addClass("subscribe2-invalid").removeClass("subscribe2-valid").html("x");
                 }
             }
         },
@@ -93,10 +93,11 @@
             var subscribeInput = $("<input>", {
                 type: "email",
                 class: "subscribe2-control-input",
+                placeholder: "Email",
                 keyup: this.inputKeyUp.bind(this)
             });
             this.validationStatusIcon = $("<div>", {
-                class: "validation-status",
+                class: "subscribe2-validation-status",
                 css: {
                     display: "none"
                 }
@@ -119,9 +120,12 @@
                     display: "none"
                 }
             });
+            var clearDiv = $("<div>", {
+                css: {clear: "both"}
+            });
             this.inputView = $("<div>", {
                 class: "subscribe2-input-view",
-                append: [subscribeInputWrp, subscribeButton, this.errorMessage]
+                append: [this.errorMessage, subscribeInputWrp, subscribeButton, clearDiv]
             })
             var subscribeBox = $("<div>", {
                 class: "subscribe2-wrp"
