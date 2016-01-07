@@ -4,6 +4,8 @@
     var pluginName = "subscribe2",
         defaults = {
             buttonText: "Request Invite",
+            btnClass: "",
+            inputClass: "",
             errorMessages: {
                 client: "Please enter a valid email address.",
                 server: "Error contacting server"
@@ -92,7 +94,7 @@
             });
             var subscribeInput = $("<input>", {
                 type: "email",
-                class: "subscribe2-control-input",
+                class: "subscribe2-control-input " + this.settings.inputClass,
                 placeholder: "Email",
                 keyup: this.inputKeyUp.bind(this)
             });
@@ -105,7 +107,7 @@
             subscribeInputWrp.append(subscribeInput, this.validationStatusIcon);
             var subscribeButton = $("<button>", {
                 text: this.settings.buttonText,
-                class: "subscribe2-btn",
+                class: "subscribe2-btn " + this.settings.btnClass,
                 click: this.submitHandler.bind(this)
             });
             this.errorMessage = $("<div>", {
