@@ -43,7 +43,8 @@ Check out the demo to see `Subscribe2` in action.
 * 100% Client side code.
 
 ## Build
-`grunt build`
+* `npm install`
+* `grunt build`
 
 ## License
 
