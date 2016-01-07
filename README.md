@@ -2,6 +2,7 @@
 A jQuery based email subscription widget with Google forms as backend.
 
 ## Usage
+* Downlaod code from `./dist`
 * Include the following lines of code in the `<head>` section of your HTML.
 
 `<link href="path-to-css/jquery.subscribe2.min.css" rel="stylesheet" />`
@@ -35,6 +36,11 @@ Check out the demo to see `Subscribe2` in action.
 * `inputClass`: (Optional) | `String` | Additional class/classes for widget input control | Default: ""
 * `errorMessages` (Optional) | `Object` | Default: `{ client: "Please enter a valid email address.", server: "Error contacting server" }`
 * `successMessage` (Optional) | `String` | Default: `"Thanks. We have added you to our list and you will be notified soon."`
+
+## Features
+* Minimal responsive css.
+* Configurable content.
+* 100% Client side code.
 
 ## Build
 `grunt build`
