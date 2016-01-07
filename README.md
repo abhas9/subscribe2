@@ -8,7 +8,7 @@ A jQuery based email subscription widget with Google forms as backend.
 
 `<script src="path-to-js/jquery.subscribe2.min.js"></script>`
 
-* Initialize `Subscribe2` by passing your Google forms metadata (See [Arguments](## Arguments)) on any container element like `<div>` that you want to make awesome.
+* Initialize `Subscribe2` by passing your Google forms metadata (See [Arguments](##Arguments)) on any container element like `<div>` that you want to make awesome.
 
 ```
 <script type="text/javascript">
